@@ -111,6 +111,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	margin: 6px 0;
+	text-shadow:none;
 }
 /*panels*/
 .panel_bg {
@@ -150,6 +151,10 @@
     display: inline-block;
 }
 
+.slick-dots li{
+	margin:0;
+}
+
 .page_logo{
 	background-image:url(../img/gusar_page_logo.png);
 	width: 167px;
@@ -160,7 +165,6 @@
 .ui-panel-dismiss-open {
     background-color: rgba(0,0,0,0.5);
 }
-
 /*panels*/
 
 /*featured*/
@@ -210,6 +214,17 @@
 	background-color: #565656;
 	margin: 12px 6px;
 	border-radius: 50%;
+	text-decoration:none;
+	text-shadow:none;
+}
+
+.footer_soc > a:after{
+	width: 35px;
+	display:block;
+	height: 35px;
+	text-align:center;
+	line-height:35px;
+	color:#fff;
 }
 /*footer*/
 
@@ -274,6 +289,10 @@
 	text-decoration:none;
 }
 
+.gusar_collapsible .lnk:visited{
+	color:#000;
+}
+
 /*game*/
 .gusar_collapsible_game_container {
 	width: 100%;
@@ -298,11 +317,8 @@
 	font-size: 10px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	height: 20px;
+	height: 40px;
 	line-height: 20px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	font-weight: 500;
 }
 /*game*/
@@ -361,3 +377,112 @@
     opacity: 1;
     color: #ff5500;
 }
+
+/*popup login*/
+.pop_cont{
+	padding:24px;
+}
+
+.pop_cont .ui-input-text{
+	background-color:#dedede;
+    border-radius: 7px;
+    margin: 12px 0;
+}
+
+.pop_cont > h3{
+	width:100%;
+	text-align:center;
+	display:block;
+	font-size:18px;
+	text-transform:uppercase;
+	color:#fff;
+	margin:15px 0 40px 0;
+}
+
+.pop_btn{
+    width: 100% !important;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff !important;
+    outline: none;
+    padding: 0;
+    background-color: #5a5a5a !important;
+    border: 0;
+    font-size: 15px;
+    text-shadow: none !important;
+	border-radius:8px;
+}
+
+.green{
+	background-color: #53ab20 !important;
+	color: #fff !important;
+}
+
+.popup_bg{
+	background-color:rgba(19,39,64,0.9);
+}
+
+#popupLogin{
+	width:100% !important;
+	height:100% !important;
+}
+
+.ui-popup-container {
+	width:100% !important;
+	height:100% !important;
+	max-width:100% !important;
+	left:0 !important;
+}
+
+.ui-corner-all{
+	border-radius:0;
+}
+
+.close_btn{
+	position:absolute;
+	right:12px;
+	top:12px;
+	width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+	display:block;
+	text-decoration:none;
+	color: #fff !important;
+}
+
+.close_btn:visited{
+	color:#fff !important;	
+}
+
+.ui-shadow-inset{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+
+}
+
+.ui-input-text input, .ui-input-search input {
+    min-height: 30px;
+	padding:0 6px;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

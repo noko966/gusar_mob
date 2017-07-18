@@ -5,214 +5,147 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-
 <link rel="stylesheet" type="text/css" href="styles/reset.css">
+<link rel="stylesheet" type="text/css" href="content/fonts/fonts.css">
 <link rel="stylesheet" type="text/css" href="slick/slick.css">
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="slick/slick.min.js"></script>
-
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-
-
-
-
-
-
 </head>
 
 <body>
 
 <!--****************PANELS****************-->
 
-<div data-role="panel" id="left_panel" class="panel panel_bg" data-position="left" data-display="push">
-	<a href="#" class="menu_btn"><i class="icon">s</i>SLOTS</a>
-    <a href="#" class="menu_btn"><i class="icon">s</i>SLOTS</a>
-    <a href="#" class="menu_btn"><i class="icon">s</i>SLOTS</a>
-    <a href="#" class="menu_btn"><i class="icon">s</i>SLOTS</a>
-    <a href="#" class="menu_btn"><i class="icon">s</i>SLOTS</a>
-    <a href="#" class="menu_btn"><i class="icon">s</i>SLOTS</a>
-    
-    <div class="page_logo"></div>
+<div data-role="panel" id="left_panel" class="panel panel_bg" data-position="left" data-display="push"> <a href="#" class="menu_btn"><i class="icon ico">1</i>SLOTS</a> <a href="#" class="menu_btn"><i class="icon ico">1</i>SLOTS</a> <a href="#" class="menu_btn"><i class="icon ico">2</i>SLOTS</a> <a href="#" class="menu_btn"><i class="icon ico">3</i>SLOTS</a> <a href="#" class="menu_btn"><i class="icon ico">5</i>SLOTS</a> <a href="#" class="menu_btn"><i class="icon ico">6</i>SLOTS</a>
+  <div class="page_logo"></div>
 </div>
-<div data-role="panel" id="right_panel" class="panel panel_bg" data-position="right" data-display="push"></div>
-<!--****************PANELS****************-->
+<!--<div data-role="panel" id="right_panel" class="panel panel_bg" data-position="right" data-display="push"></div>-->
 
+<div data-role="popup" id="popupLogin" data-theme="none" class="popup_bg" data-shadow="false">
+  <form>
+    <div class="pop_cont"> 
+    <a href="#" data-rel="back" class="close_btn ico">6</a>
+      <h3>LOGIN</h3>
+      <label for="un" class="ui-hidden-accessible">Username:</label>
+      <input type="text" name="user" id="un" value="" placeholder="username">
+      <label for="pw" class="ui-hidden-accessible">Password:</label>
+      <input type="password" name="pass" id="pw" value="" placeholder="password">
+      <button type="submit" class="pop_btn green">Sign in</button>
+    </div>
+  </form>
+</div>
 
+<!--****************PANELS****************--> 
 
 <!--****************HEADER****************-->
 <div data-role="content">
-<div class="gusar_mob_main_header displayFlex alCen">
-    <a class="btn_color_one block nav_btn" href="#left_panel" >H</a>
-    <a href="#" class="logo_home"></a>
-    <a class="btn_color_two block nav_btn" href="#right_panel" >Login</a>
-</div>
-<!--****************HEADER****************-->
-
-
-<!--****************SLIDER****************-->
-<div class="gusar_home_slider_cont">
+  <div class="gusar_mob_main_header displayFlex alCen"> <a class="btn_color_one block nav_btn ico" href="#left_panel" >1</a> <a href="#" class="logo_home"></a> <a href="#popupLogin" data-rel="popup" data-position-to="window" class="btn_color_two block nav_btn" data-transition="pop">Sign in</a> 
+    
+    <!--<a class="btn_color_two block nav_btn" href="#right_panel" >Login</a>--> 
+  </div>
+  <!--****************HEADER****************--> 
+  
+  <!--****************SLIDER****************-->
+  <div class="gusar_home_slider_cont">
     <div class="gusar_home_slider">
-        <div><img src="img/slider/1.jpg" alt="s"></div>
-        <div><img src="img/slider/2.jpg" alt="s"></div>
-     </div>
- </div>
-<!--****************SLIDER****************-->
-
-
-<!--****************SLIDER2****************-->
-<div class="gusar_home_drag_slider_cont">
+      <div><img src="img/slider/1.jpg" alt="s"></div>
+      <div><img src="img/slider/2.jpg" alt="s"></div>
+    </div>
+  </div>
+  <!--****************SLIDER****************--> 
+  
+  <!--****************SLIDER2****************-->
+  <div class="gusar_home_drag_slider_cont">
     <div class="gusar_home_drag_slider">
-        <div><img src="img/drag_slider/1.jpg" alt="s"></div>
-        <div><img src="img/drag_slider/2.jpg" alt="s"></div>
-        <div><img src="img/drag_slider/3.jpg" alt="s"></div>
-        <div><img src="img/drag_slider/1.jpg" alt="s"></div>
-        <div><img src="img/drag_slider/2.jpg" alt="s"></div>
-        <div><img src="img/drag_slider/3.jpg" alt="s"></div>
-
-     </div>
- </div>
-<!--****************SLIDER2****************-->
-
-
-<!--****************GAME CONTENT****************-->
-<div class="gusar_collapsible" data-role="collapsible" data-content-theme="false">
-    <h4><span class="icon">a</span><span class="text">Heading</span><a onClick="stop_prop(event)" href="#" class="lnk">Show all 134</a></h4>
-	
-    <div class="gusar_collapsible_game_container displayFlex wrp jc">
-    	<a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
+      <div><img src="img/drag_slider/1.jpg" alt="s"></div>
+      <div><img src="img/drag_slider/2.jpg" alt="s"></div>
+      <div><img src="img/drag_slider/3.jpg" alt="s"></div>
+      <div><img src="img/drag_slider/1.jpg" alt="s"></div>
+      <div><img src="img/drag_slider/2.jpg" alt="s"></div>
+      <div><img src="img/drag_slider/3.jpg" alt="s"></div>
     </div>
-
-</div>
-
-<!--****************GAME CONTENT****************-->
-
-
-
-
-<!--****************GAME CONTENT****************-->
-<div class="gusar_collapsible" data-role="collapsible" data-content-theme="false">
-    <h4><span class="icon">a</span><span class="text">Heading</span><a href="#" class="lnk">Show all 134</a></h4>
-	
-    <div class="gusar_collapsible_game_container displayFlex wrp jc">
-    	<a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-        
-        <a href="#" class="game_cont">
-        	<div class="img"></div>
-            <span class="name">name</span>
-        </a>
-    </div>
-
-</div>
-
-<!--****************GAME CONTENT****************-->
-
-
-
-<!--****************FEATURED****************-->
-<div class="gusar_featured">
-</div>
-<!--****************FEATURED****************-->
-
-
-<!--****************FOOTER****************-->
-<div class="gusar_footer">
-	<div class="footer_c"></div>
+  </div>
+  <!--****************SLIDER2****************--> 
+  
+  <!--****************GAME CONTENT****************-->
+  <div class="gusar_collapsible" data-role="collapsible" data-content-theme="false">     
+    <h4><span class="icon ico">2</span><span class="text">Heading</span><a onClick="stop_prop(event)" href="#" class="lnk">Show all 134</a></h4>
+    <div class="gusar_collapsible_game_container displayFlex wrp jc"> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> </div>
+  </div>
+  
+  <!--****************GAME CONTENT****************--> 
+  
+  <!--****************GAME CONTENT****************-->
+  <div class="gusar_collapsible" data-role="collapsible" data-content-theme="false">     
+    <h4><span class="icon ico">1</span><span class="text">Heading</span><a href="#" class="lnk">Show all 134</a></h4>
+    <div class="gusar_collapsible_game_container displayFlex wrp jc"> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> <a href="#" class="game_cont">
+      <div class="img"></div>
+      <span class="name">name</span> </a> </div>
+  </div>
+  
+  <!--****************GAME CONTENT****************--> 
+  
+  <!--****************FEATURED****************-->
+  <div class="gusar_featured"> </div>
+  <!--****************FEATURED****************--> 
+  
+  <!--****************FOOTER****************-->
+  <div class="gusar_footer">
+    <div class="footer_c"></div>
     <h5 class="h5 bare_txt block txtac">All rights reserved</h5>
-    
     <div class="footer_images displayFlex wrp jb">
-    	<div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
+      <div class="img"></div>
     </div>
+    <div class="footer_soc displayFlex jc"> <a class="ico fb" href="#"></a> <a class="ico tw" href="#"></a> <a class="ico gplus" href="#"></a> <a class="ico yt" href="#"></a> </div>
     
-    <div class="footer_soc displayFlex jc">
-    	<a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-    </div>
-    
-
-<!--****************FOOTER****************-->
-</div>
-
+    <!--****************FOOTER****************--> 
+  </div>
 </div>
 </body>
-
 <script type="text/javascript">
     $(document).ready(function(){
       $('.gusar_home_slider').slick({
 		  mobileFirst: true,
 		  arrows:false,
 		  infinite: true,
-		  slidesToShow: 1
+		  slidesToShow: 1,
+		  autoplay: true,
+		  autoplaySpeed: 4000,
       });
     });
 	
@@ -230,6 +163,9 @@
 	function stop_prop(e){
 		e.stopPropagation();
 	}
+	
+	
+
 	
 	
   </script>
